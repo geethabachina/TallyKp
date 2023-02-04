@@ -1,0 +1,129 @@
+
+<section>
+    <div class="bg-login custom-bg">
+        <form class="form-signin1" [formGroup]="importForm">
+            <h1 class="mb-3"></h1>
+            <div class="loginbox">
+               <!-- <h2 class="table-f-color">TALLY APP</h2>
+                 <div class="row" style="justify-content: right;padding-right: 1rem !important;">
+                    <a class="hand back-color" routerLinkActive="active" routerLink="/logout"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+                </div> -->
+                
+                <div style="margin-bottom: -8px;display: flex;align-items: center; justify-content: space-between; ">
+                    <i style="color: #5126ec;margin-bottom: 4px;" routerLinkActive="active" routerLink="/selectOption" class="fa fa-arrow-left fa-lg" aria-hidden="true"></i>
+                    <div style="text-align: center;">
+                        <h4  class="custom-title" style="justify-content: center;font-family: 'Cedarville Cursive'">TALLY APP</h4>
+                    </div>
+                    <div></div>
+                </div>
+                <div  style="font-weight: 400;background-color: #5126ec;" class="badge badge-pill badge-secondary">Tally No : 123</div>
+
+                <div class="row" style="justify-content: right;padding-right: 1rem !important">
+                    <!-- <a class="hand back-color" routerLinkActive="active" routerLink="/logout"><i class="fa fa-sign-out" aria-hidden="true"></i></a> -->
+                    <!-- <img  style="width: 22px;height: 22px;" routerLinkActive="active" routerLink="/logout" src="assets/css/images/logout3-removebg.png" class="image logo"> -->
+                </div>
+
+                <div class="row pt-4">
+                    <div class="col">
+                             <div class="row mb-2">
+                                    <div *ngIf="fromBtn=='vessel'" class="col-6">
+                                        <label class="label-style table-f-color">Hatch</label>
+                                        <input type="text" class="form-control custom-form" [(ngModel)]="hatch" [ngModelOptions]="{standalone: true}" placeholder="Hatch" >
+                                    </div>
+                                    <div *ngIf="fromBtn=='yard'" class="col-6">
+                                        <label class="label-style table-f-color">Yard No</label>
+                                        <input type="text" class="form-control custom-form" [(ngModel)]="hatch" [ngModelOptions]="{standalone: true}" placeholder="Yard No" >
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="label-style required table-f-color">SIID</label>
+                                        <select class="form-control custom-form" [(ngModel)]="siid" name="location" formControlName="location" [ngClass]="{ 'is-invalid': importForm.controls['location'].touched && importForm.controls['location'].invalid }">
+                                            <option value=null>Select SIID</option>
+                                            <option value="25">SIID 1</option>
+                                            <option value="50">SIID 2</option>
+                                            <option value="100">SIID 3</option>
+                                        </select>
+                                        <div *ngIf="importForm.controls['location'].touched && importForm.controls['location'].invalid" class="alert">
+                                            <div *ngIf="importForm.controls['location'].errors && importForm.controls['location'].errors['required']">is required.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-6">
+                                        <label class="label-style table-f-color">Import/Export</label>
+                                        <select class="form-control custom-form" [(ngModel)]="document" [ngModelOptions]="{standalone: true}">
+                                            <option value=null>Select Import/Export</option>
+                                            <option value="Import">Import 1</option>
+                                            <option value="Import">Import 2</option>
+                                            <option value="Export">Export 1</option>
+                                            <option value="Export">Export 2</option>
+                                        </select>
+                                    </div>
+                                    <div *ngIf="document=='Export'" class="col-6">
+                                        <label class="label-style table-f-color">D/O</label>
+                                        <input type="number" class="form-control custom-form" [(ngModel)]="Weight" [ngModelOptions]="{standalone: true}" placeholder="D/O">
+                                    </div>
+                                </div>
+                                <div *ngIf="document=='Export'" class="row mb-2">
+                                    <div class="col-6">
+                                        <label class="label-style table-f-color">Gross Weight</label>
+                                        <input type="number" class="form-control custom-form" [(ngModel)]="Weight" [ngModelOptions]="{standalone: true}" placeholder="Gross Weight">
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-6">
+                                        <label class="label-style table-f-color">Date</label>
+                                        <input type="text" class="form-control custom-form" [(ngModel)]="selectedData.date" [ngModelOptions]="{standalone: true}" placeholder="Date" disabled>
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="label-style table-f-color">Tally No</label>
+                                        <input type="text" class="form-control custom-form" [(ngModel)]="selectedData.tallyNo" [ngModelOptions]="{standalone: true}" placeholder="Tally No" disabled>
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-6">
+                                        <label class="label-style table-f-color">SCN</label>
+                                        <input type="text" class="form-control custom-form" [(ngModel)]="selectedData.berthNo" [ngModelOptions]="{standalone: true}" placeholder="SCN" disabled>
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="label-style table-f-color">Berth No</label>
+                                        <input type="text" class="form-control custom-form" [(ngModel)]="selectedData.berthNo" [ngModelOptions]="{standalone: true}" placeholder="Berth No" disabled>
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-12">
+                                        <label class="label-style table-f-color">Cargo Name</label>
+                                        <input type="text" class="form-control custom-form" [(ngModel)]="cargoName" [ngModelOptions]="{standalone: true}" placeholder="Cargo Name" disabled>
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-6">
+                                        <label class="label-style table-f-color">B/L No</label>
+                                        <input type="text" class="form-control custom-form" [(ngModel)]="selectedData.berthNo" [ngModelOptions]="{standalone: true}" placeholder="B/L No" disabled>
+                                    </div>
+                                </div>
+                               
+                               
+                               
+                               
+                               <!---------------------------------- buttons--------------------------------- -->
+                                <!-- <div class="row mt-3" style="text-align: center;">
+                                    <div class="col-6">
+                                        <button type="submit" class="btn btn-primary" style="width: 100%;" (click)="back()">Back</button>
+                                    </div>
+                                    <div class="col-6">
+                                        <button type="submit" class="btn btn-primary" style="width: 100%;" (click)="save()">Save</button>
+                                    </div>
+                                </div> -->
+                               
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+
+
+
+

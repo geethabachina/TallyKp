@@ -1,0 +1,46 @@
+<div>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+  <div class="notShow bgcolor footer-menu ">
+        <div class="d-flex justify-content-around footer-icons">
+            <!-- <button class="btn btn1"><i routerLinkActive="active" routerLink="/selectOption" class="fa fa-arrow-left fa-lg"></i></button> -->
+            <button class="btn btn1" id="list" (click)="listView()"><i class="fa fa-list fa-lg"></i></button>
+            <button *ngIf="btnType!='TS'" class="btn btn1" id="add" (click)="addView()"><i class="fa fa-plus fa-lg"></i></button>
+            <button *ngIf="btnType=='TS'" class="btn btn1" id="add" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-plus fa-lg"></i></button>
+            <!-- <span style="padding-left: 15px"><i data-toggle="modal" data-target="#exampleModal" class="fa fa-trash-o hand mr-3"></i></span> -->
+            <button class="btn btn1" (click)="logout()"><i class="fa fa-sign-out fa-lg"></i></button>
+            <!-- <button class="btn btn1" routerLinkActive="active" routerLink="/logout"><i class="fa fa-sign-out fa-lg"></i></button> -->
+        </div>
+    </div> 
+</div>
+
+
+    <!----------------------------------------------- delete Modal --------------------------------------------------------------->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content" style="margin-top:240px">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel" style="color: #5126ec;font-weight: 600;">TALLY SHEET</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Are you sure you want to create 'Tally Sheet' ?
+          </div>
+          <div class="modal-footer">
+            <!-- <button type="button" class="btn btn-primary"  data-dismiss="modal" (click)="addView()">Yes</button>
+            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal" aria-label="Close">No</button> -->
+            <button type="submit" class="btn no-bk mauto d-flex align-items-center px-6" data-dismiss="modal" (click)="addView()">
+              <img class="acc-dec-icon mr-3" src="../../../../assets/css/images/accepted.png" alt="">
+              <p class="mb-0">Yes</p>
+            </button>
+            <button type="button" data-dismiss="modal" aria-label="Close" class="btn no-bk mauto d-flex align-items-center px-6">
+              <img class="acc-dec-icon mr-3" src="../../../../assets/css/images/declined.png" alt="">
+              <p class="mb-0">No</p>
+          </button>
+          </div>
+        </div>
+      </div>
+    </div>

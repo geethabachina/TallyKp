@@ -1,0 +1,234 @@
+/* start search icon css */
+.password-container{
+  /* width: 400px; */
+  position: relative;
+}
+.password-container input[type="text"]{
+  width: 100%;
+  padding: 12px 36px 12px 12px;
+  box-sizing: border-box;
+}
+.fa-search{
+  position: absolute;
+  top: 28%;
+  right: 4%;
+  cursor: pointer;
+  color: gray;
+}
+/* end search icon css */
+
+
+/* mobile */
+.btn-width{
+    margin-top: 16px;
+    width: 120px;
+  }
+  .back{
+    margin-left: -210px !important;
+    margin-top: 15px;
+    margin-bottom: -20px;
+  }
+  .back-color{
+    color: white;
+  }
+  .table-f-color{
+    color: #2a3a43;
+    /* color: black; */
+  }
+  .notShowBtn{
+    display: none;
+  }
+  .custom-form{color: #2a3a43 !important;
+    background-color: #fff !important;
+    border-radius: 20px !important;
+    border: 1px solid #d5d4d4 !important;
+    box-shadow: rgb(0 0 0 / 4%) 0px 3px 16px;}
+    ::placeholder { color: #2a3a43 !important; opacity: 0.5;}
+  
+  /* desktop */
+  @media only screen and (min-width: 415px) {
+    .loginbox {
+      background: #f8f9fa;
+      border-radius: 30px;
+      padding: 2vw;
+    }
+    .btn-width{
+      margin-top: 16px;
+      width: 130px;
+    }
+    .back{
+        margin-left: -235px !important;
+        margin-top: 15px;
+        margin-bottom: -20px;
+    }
+    .back-color{
+        color: #2196F3;
+    }
+    .table-f-color{
+        color: black;
+    }
+    .col1{
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+    .notShow{
+      display: none;
+    }
+    .notShowBtn{
+      display: flex;
+    }
+  }
+  .form-signin1{
+    max-width: 530px;
+    /* padding-right: 30px;
+    padding-left: 30px; */
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .subtitle {
+    color: #66ccff;
+    margin-top: 4vh;
+    font-size: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 0;
+    font-weight: bolder;
+  }
+  
+  .subtitle1 {
+  color: black;
+  margin-top: 4vh;
+  font-size: 11px;
+  padding-left: 27px;
+  padding-right: 53px;
+  /* padding-top: 25px; */
+  padding-bottom: 25px;
+  margin-bottom: 0;
+  font-weight: bolder;
+  }
+  
+  .form-label-group {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  .label {
+    display: inline-block;
+    margin-top: 0.5rem;
+    float: left;
+  }
+  .ijm_logo {
+    max-width: 50%;
+    margin-top: 5vh;
+  }
+  .bg-login{
+    background-image:linear-gradient(#00477a,rgb(4 72 96 / 74%));
+    height: 100%;
+    width: 101%;
+    /* width: 100%; */
+    position: fixed;
+  }
+  /* .labelStyle{
+    display: inline-block;
+    margin-top: 0.5rem;
+    float: left;
+    font-family:Open sans-serif;
+    color: blue;
+    font-weight: bold;
+  } */
+  
+  .btn-primary1{
+    background: rgb(79, 148, 79);
+    border: none;
+  }
+  .text-unactive {
+    color: #cbcbcb;
+    font-weight: 300;
+  }
+  .nav-link {
+    color: black !important;
+    font-weight: 300;
+    font-size: 13px;
+  }
+  a {
+    color: #58626b;
+  }
+  
+  .nav-secondary a.active {
+    border-bottom: solid #f7a941 2px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+  }
+  
+  .nav-secondary-white a.active {
+    color: #2a3a43 !important;
+  }
+  .nav-secondary-purple a.active {
+    color: rgb(255, 255, 255) !important;
+  }
+  
+  .team-tabs a.active {
+    color: #f7a941;
+  }
+  /* .top-nav{
+    display: flex;
+    padding-top: 6px;
+    padding-bottom: 1px;
+    height: 52px;
+    background-color: #2A3A43;
+    flex-grow: 1;
+ } */
+ 
+.form-control{
+    font-size: 14px;
+}
+/* .nav-secondary a.active {
+    border-bottom: solid #f7a941 2px;
+    font-weight: 600;
+    display: flex;
+    padding-top: 6px;
+    padding-bottom: 1px;
+    height: 35px;
+    background-color: #f7a941;
+    flex-grow: 1;
+    border-radius: 8px;
+} */
+
+.btn:focus {
+  background-color: #0B257F;
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+  background-color: #5126ec;
+  color: white;
+  /* background-color: #d3d3d375; */
+  /* background: linear-gradient(78deg, rgba(81,38,236,1) 0%, rgb(152 116 240) 47%, #d598d3 100%) !important; */
+}
+
+/* .bg-green{
+  background-color: green;
+}
+
+.bg-yellow{
+  background-color: yellow;
+} */
+@media only screen and (min-device-width: 412px) and (max-device-width: 915px) and (orientation: landscape) {
+
+  .form-signin1{
+    max-width: 830px;
+    /* padding-right: 30px;
+    padding-left: 30px; */
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+

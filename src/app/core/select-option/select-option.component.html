@@ -1,0 +1,35 @@
+<section>
+    <div class="bg-login">
+        <form class="form-signin1">
+            <!-- <h1 class="mb-3" style="padding-top: 100px;color: white;"><img  style="width: 250px;padding-top: 25px;" src="assets/css/images/tally.png" class="image logo"></h1> -->
+            <h2 class="mb-3" style="padding-top: 150px;color: white;font-family: 'Cedarville Cursive'" >TALLY APP</h2>
+            
+            <!-- <h3 class="subtitle1" style="color: white;">Kuantan Port Consortium Sdn Bhd</h3> -->
+            <div class="loginbox">
+               
+                <div class="mb-3">
+                    <input style="font-family:Open sans-serif" type="text" class="form-control" placeholder="Lorry Number">
+                    <!-- <div *ngIf="loginForm.controls['username'].touched && loginForm.controls['username'].invalid" class="alert">
+                        <div *ngIf="loginForm.controls['username'].errors && loginForm.controls['username'].errors['required']">Username is required.</div>
+                    </div> -->
+                </div>
+
+               
+                <div class="row mb-3" style="text-align: center;">
+                    <div class="col-6">
+                        <!-- <button type="submit" class="btn btn-primary" style="width:100%;" routerLinkActive="active" routerLink="/core/import">From Vessel</button> -->
+                        <button type="submit" class="btn btn-primary" style="width:100%;" (click)="btnClick('vessel')">From Vessel</button>
+                    </div>
+                    <div class="col-6">
+                        <button type="submit" class="btn btn-primary" style="width:100%;" (click)="btnClick('yard')">From Yard</button>
+                    </div>
+                </div>
+                <div class="row ml-1">
+                    <a class="hand back-color" routerLinkActive="active" routerLink="/login"><i class="fa fa-arrow-left mr-2" aria-hidden="true"></i>Back </a>
+                </div>
+
+               
+            </div>
+        </form>
+    </div>
+</section>

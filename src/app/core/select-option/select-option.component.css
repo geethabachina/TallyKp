@@ -1,0 +1,116 @@
+/* .loginbox {
+  background: #f8f9fa;
+  border-radius: 30px;
+  padding: 3vw;
+} */
+/* mobile */
+.btn-width{
+    margin-top: 16px;
+    width: 120px;
+  }
+  .back{
+    margin-left: -210px !important;
+    margin-top: 15px;
+    margin-bottom: -20px;
+  }
+  .back-color{
+    color: white;
+  }
+  /* desktop */
+  @media only screen and (min-width: 415px) {
+    .loginbox {
+      background: #f8f9fa;
+      border-radius: 30px;
+      padding: 3vw;
+    }
+    .btn-width{
+      margin-top: 16px;
+      width: 130px;
+    }
+    .back{
+        margin-left: -235px !important;
+        margin-top: 15px;
+        margin-bottom: -20px;
+    }
+    .back-color{
+        color: #2196F3;
+    }
+  }
+  .form-signin {
+    width: 100%;
+    max-width: 530px;
+    padding: 45px;
+    margin: 0 auto;
+  }
+  /* .form-signin1{
+    max-width: 530px;
+    padding-right: 92px;
+    margin: 0 auto;
+    text-align: center;
+  } */
+  
+  .form-signin1{
+    max-width: 530px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .subtitle {
+    color: #66ccff;
+    margin-top: 4vh;
+    font-size: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 0;
+    font-weight: bolder;
+  }
+  
+  .subtitle1 {
+  color: black;
+  margin-top: 4vh;
+  font-size: 11px;
+  padding-left: 27px;
+  padding-right: 53px;
+  /* padding-top: 25px; */
+  padding-bottom: 25px;
+  margin-bottom: 0;
+  font-weight: bolder;
+  }
+  
+  .form-label-group {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  .label {
+    display: inline-block;
+    margin-top: 0.5rem;
+    float: left;
+  }
+  .ijm_logo {
+    max-width: 50%;
+    margin-top: 5vh;
+  }
+  .bg-login{
+    background-image:linear-gradient(rgba(245,70,66, 0.75),rgba(8,83,156, 0.75));
+    height: 100%;
+    width: 100%;
+    position: fixed;
+  }
+  /* .labelStyle{
+    display: inline-block;
+    margin-top: 0.5rem;
+    float: left;
+    font-family:Open sans-serif;
+    color: blue;
+    font-weight: bold;
+  } */
+  
+  /* .btn-primary{
+    background: #1fb8da;
+    border: none;
+  } */
+

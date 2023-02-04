@@ -1,0 +1,134 @@
+<section>
+    <div class="bg-login">
+        <form class="form-signin1" [formGroup]="importForm">
+            <h1 class="mb-3" style="padding-top: 50px;"></h1>
+            <div class="loginbox">
+                <h2 class="table-f-color">Import</h2>
+                <div class="row pt-4">
+                    <div class="col mx-3">
+                        <!-- <nav class="navbar-expand-md top-nav col pt-1">
+                            <ul class="team-tabs nav justify-content-left nav-secondary nav-secondary-white pt-2" style="flex-wrap: initial;">
+                                <li class="nav-item">
+                                    <a class="nav-link text-unactive active" data-toggle="tab" href="#order-tab" role="tab" style="font-size: 15px;">Tally Creation</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-unactive" data-toggle="tab" href="#product-tab" role="tab" style="font-size: 15px;">Tally Listing</a>
+                                </li>
+                            </ul>
+                        </nav> -->
+        <!------------------------------------- tab1-------------------------------------------------- -->
+                        <!-- <div class="tab-content mt-4 pt-1">
+                            <div class="tab-pane fade show active" id="order-tab" role="tabpanel"> -->
+                                <div class="row mb-2">
+                                    <div class="col-6">
+                                        <input type="number" class="form-control" placeholder="Quantity" >
+                                        <!-- <div *ngIf="importForm.controls['scn'].touched && importForm.controls['scn'].invalid" class="alert">
+                                            <div *ngIf="importForm.controls['scn'].errors && importForm.controls['scn'].errors['required']">is required.</div>
+                                        </div> -->
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="text" class="form-control" placeholder="Pieces" >
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-6">
+                                        <input type="text" class="form-control" placeholder="Hatch" >
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="text" class="form-control" placeholder="Location" >
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-12">
+                                        <input type="text" class="form-control" placeholder="Lorry No" >
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-12">
+                                        <input type="text" class="form-control" placeholder="Container No" >
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-12">
+                                        <textarea name="Remarks" class="form-control" rows="3" cols="50" placeholder="Remarks"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-5" style="text-align: center;">
+                                    <div class="col-6">
+                                        <button type="submit" class="btn btn-primary" style="width: 100%;" routerLinkActive="active" routerLink="/wpImport">Back</button>
+                                    </div>
+                                    <div class="col-6">
+                                        <button type="submit" class="btn btn-primary" style="width: 100%;" (click)="save()" >Save</button>
+                                    </div>
+                                </div>
+                                <!-- <div class="row ml-1 pt-3">
+                                    <a class="hand back-color" routerLinkActive="active" routerLink="/logout"><i class="fa fa-arrow-left mr-2" aria-hidden="true"></i>Logout</a>
+                                </div> -->
+                            <!-- </div> -->
+        <!------------------------------------- tab2-------------------------------------------------- -->
+                            <!-- <div class="tab-pane fade" id="product-tab" role="tabpanel">
+                                     <table class="table" style="border: 1px solid #dee2e6;font-size: 13px;">
+                                        <thead style="background: orange;">
+                                        <tr>
+                                            <th scope="col">
+                                            <span>Date</span>
+                                            </th>
+                                            <th scope="col">
+                                                <span>Tally No</span>
+                                            </th>
+                                            <th scope="col">
+                                                <span>Lorry No</span>
+                                            </th>
+                                            <th scope="col">
+                                                <span>Tonnage</span>
+                                            </th>
+                                        </tr>
+                                        </thead>
+                                        <tbody class="table-f-color">
+                                        <tr>
+                                            <td>11/3</td>
+                                            <td>TS3414</td>
+                                            <td>VCA123</td>
+                                            <td>45.2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11/3</td>
+                                            <td>TS3414</td>
+                                            <td>VCA123</td>
+                                            <td>45.2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11/3</td>
+                                            <td>TS3414</td>
+                                            <td>VCA123</td>
+                                            <td>45.2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11/3</td>
+                                            <td>TS3414</td>
+                                            <td>VCA123</td>
+                                            <td>45.2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11/3</td>
+                                            <td>TS3414</td>
+                                            <td>VCA123</td>
+                                            <td>45.2</td>
+                                        </tr>
+                                        </tbody>
+                                    </table> 
+
+                                    <div class="row mt-5" style="justify-content: center;">
+                                        <div class="col-6">
+                                            <button type="submit" class="btn btn-primary" style="width: 100%;">Update</button>
+                                        </div>
+                                    </div>
+                            </div> -->
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>

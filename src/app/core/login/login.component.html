@@ -1,0 +1,35 @@
+<section>
+      <div class="bg-login">
+          <form class="form-signin1" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+              <!-- <h1 class="mb-3" style="padding-top: 100px;color: white;"><img  style="width: 250px;padding-top: 25px;" src="assets/css/images/tally.png" class="image logo"></h1> -->
+              <h2 style="padding-top: 150px;color: white;font-family: 'Cedarville Cursive'" >TALLY APP</h2>
+              <span class="subtitle1">Kuantan Port Consortium Sdn Bhd</span>
+
+              <!-- <h3 class="subtitle1" style="color: white;">Kuantan Port Consortium Sdn Bhd</h3> -->
+              <div class="loginbox mt-2">
+                  <div class="mb-4">
+                      <input style="font-family:Open sans-serif" type="text" class="form-control custom-form" [(ngModel)]="username" placeholder="Username" formControlName="username" autofill="false" [ngClass]="{ 'is-invalid': loginForm.controls['username'].touched && loginForm.controls['username'].invalid }">
+                      <div *ngIf="loginForm.controls['username'].touched && loginForm.controls['username'].invalid" class="alert">
+                          <div *ngIf="loginForm.controls['username'].errors && loginForm.controls['username'].errors['required']">is required.</div>
+                      </div>
+                  </div>
+
+                  <div class="mb-4">
+                      <input style="font-family:Open sans-serif" type="password" class="form-control custom-form" placeholder="Password" formControlName="password" autofill="false" [ngClass]="{ 'is-invalid': loginForm.controls['password'].touched && loginForm.controls['password'].invalid }">
+                      <div *ngIf="loginForm.controls['password'].touched && loginForm.controls['password'].invalid" class="alert">
+                          <div *ngIf="loginForm.controls['password'].errors && loginForm.controls['password'].errors['required']">is required.</div>
+                      </div>
+                  </div>
+                  <div style="text-align: center;">
+                      <button type="submit" class="btn btn-primary" style="width: 100%;" (click)="onSubmit()">Log In</button>
+                  </div>
+
+                  <!-- <div align="right">
+                  <br>
+                  <h4 color="#2E2E2E" style="font-size: 12px;">Version 1.38.5</h4>
+                  </div> -->
+              </div>
+              <!-- <p class="mt-1 text-white small copyright" style="text-align: center;">© Copyright Privaports Sdn Bhd. All Rights Reserved.</p> -->
+          </form>
+      </div>
+</section>
